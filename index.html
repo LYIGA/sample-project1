@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <h1></h1>
-  <p>Hello</p>
 
   <body>
     <!-- Wrap the entire page content in a new div with the page class. Remember to add the closing tag -->
@@ -59,7 +57,7 @@
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
-          <ul>
+          <ul class="staff__cards">
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">Introduction to Algorithms</h3>
@@ -129,7 +127,7 @@
             </li>
           </ul>
         </section>
-          <section class="events" id="events">
+        <section class="events" id="events">
           <div class="events__content">
             <h2 class="events__heading">Upcoming events:</h2>
             <h3 class="events__title">
@@ -207,7 +205,7 @@
               />
               <p class="person__caption">Maria Mitchell</p>
             </div>
-            </div>
+          </div>
         </section>
 
         <section class="membership" id="membership">
@@ -266,8 +264,8 @@
           </ul>
         </section>
         <section class="about" id="about">
-         <h2 class="about__title">About the library</h2>
-         <div class="about__content">
+          <h2 class="about__title">About the library</h2>
+          <div class="about__content">
             <p class="about__paragraph">
               Libraries are essential establishments in practically every city,
               and Practicum's library is no exception. It first opened its doors
@@ -285,14 +283,55 @@
               astrophysicist and the first woman to be elected as an officer of
               the American Geophysical Union.
             </p>
-            </div>
-        <!-- <div class="about__circle"></div> -->
+          </div>
+          <div class="about__circle"></div>
         </section>
-        </main>
-    <footer class="footer" id="footer">
-      <!-- The time to mark up the footer has come, you can do it 💪 -->
-    </footer>
-  </div>
+      </main>
+      <footer class="footer" id="footer">
+        <!-- The time to mark up the footer has come, you can do it 💪 -->
+        <div class="footer__columns">
+          <div class="footer__column">
+            <img
+              class="footer__logo"
+              src="./images/logo_practicum.svg"
+              alt="footerlogo"
+            />
+          </div>
+          <div class="footer__column footer__column_content_hours">
+            <h2 class="footer__heading">Hours</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">Weekdays:9am-8pm</li>
+              <li class="footer__list-item">Weekends: 10am-6pm</li>
+            </ul>
+          </div>
+          <div class="footer__column footer__column_content_social">
+            <h2 class="footer__heading">Social Media</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__column-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/facebook_white.svg"
+                    alt="Facbook Log"
+                  />
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__column-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/instagram_white.svg"
+                    alt="Instagram"
+                  />
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer__column-copyrights">&copy; 2022 Akin Smith</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
-
